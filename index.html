@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-section-block">
+                    <div class="hero-section-info">
+                        <img class="animate__animated animate__bounce" src="./img/logo.png" alt="">
+                        <div class="hero-section-info-title">
+                            <h2>C помощью нас <br> вы сможете создать то, о чем</h2>
+                            <h2>желаете!</h2>
+                        </div>
+                        <p>Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на
+                            все 100%. Вас не остановить!</p>
+                        <button>Узнать больше...</button>
+                    </div>
+                    <div class="hero-section-img">
+                        <img onclick="rotateElem(this)" src="./img/header-img.png" alt="Изображение приложения на телефоне">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="choose-section">
+            <div class="container">
+                <div class="choose-section-block">
+                    <div class="choose-section-title">
+                        <h2>Что Вам необходимо?</h2>
+                    </div>
+                    <div class="choose-section-block-cards">
+                        <div onclick="changeColor(this)" class="choose-section-block-card">
+                            <img src="./img/f3.png" alt="Иконка линейки и карандаша">
+                            <h3>Первый блок</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                        <div onclick="changeColor(this)" class="choose-section-block-card">
+                            <img src="./img/f4.png" alt="Иконка возушного шара">
+                            <h3>Второй блок</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit?</p>
+                        </div>
+                        <div onclick="changeColor(this)" class="choose-section-block-card">
+                            <img src="./img/f5.png" alt="Иконка флага">
+                            <h3>Третий блок</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-section delivery-section">
+            <div class="container">
+                <div class="form-section-block">
+                    <h2 class="animate__animated animate__pulse animate__infinite animate__slow">Форма заказа доставки шариков</h2>
+                    <form class="call-me-form deliver-me-form" action="POST">
+                        <div><label for="name"></label>
+                            <input name="name" type="text" placeholder="ФИО получателя">
+                        </div>
+                        <div><label for="tel"></label>
+                            <input name="tel" type="text" placeholder="Телефон">
+                        </div>
+                        <div><label for="time"></label>
+                            <input name="time" type="text" placeholder="Время доставки">
+                        </div>
+                        <div><label for="count"></label>
+                            <input name="count" type="number" placeholder="Количество шаров">
+                        </div>
+                        <button type="submit" class="form-button deliver-btn">Заказать</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="form-section">
+            <div class="container">
+                <div class="form-section-block">
+                    <h2 class="animate__animated animate__pulse animate__infinite animate__slow">Форма заказа обратного звонка</h2>
+                    <form class="call-me-form" action="POST">
+                        <input type="text" placeholder="Имя" pattern="[А-Яа-яЁё\s]+" required>
+                        <input type="email" placeholder="Введите свой E-mail" pattern="/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w)$/" required>
+                        <input type="tel" placeholder="Телефон +7(8)8005553535" required pattern="^((\+7|7|8)+([0-9]){10})$">
+                        <input type="text" placeholder="Какая тема Вас интересует?" pattern="[A-Za-zА-Яа-яЁё0-9\s]+" maxlength="200" required>
+                        <button type="submit" class="form-button">Отправить вопрос!</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-info">
+            <div class="container">
+                <div class="footer-info-block">
+                    <p class="copyright-text">Все на этом сайте защищено</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
